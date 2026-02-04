@@ -1,13 +1,3 @@
-"""
-SORB AI - Core Strategy Engine
-==============================
-
-This is the base SORB strategy that the AI will enhance.
-Copied from the proven working strategy with optimized parameters.
-
-Author: Quant Research AI
-"""
-
 import pandas as pd
 import numpy as np
 from datetime import datetime, time, timedelta
@@ -83,9 +73,8 @@ class Trade:
     pnl: float
     pnl_r: float
     exit_reason: str
-    signal_type: str  # 'SORB' or 'AI_ENHANCED'
-    confidence: float  # 0-1 confidence score
-
+    signal_type: str
+    confidence: float
 
 class Indicators:
     """Technical indicator calculations"""

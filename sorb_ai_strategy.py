@@ -1,16 +1,8 @@
 """
-SORB AI Strategy - Combined ML + Rules-Based Trading
-=====================================================
-
 This strategy combines:
 1. Original SORB signals (high confidence)
 2. ML-enhanced signals (when SORB conditions are close)
 3. Near-miss detection (pattern matching)
-
-Goal: Increase trade frequency from 0.7/month to 3-5/month
-while maintaining positive expectancy.
-
-Author: Quant Research AI
 """
 
 import pandas as pd

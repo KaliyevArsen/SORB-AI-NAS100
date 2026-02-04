@@ -1,18 +1,12 @@
 """
-ML Signal Generator - Machine Learning Enhanced Signals
-========================================================
-
 This module trains ML models to:
 1. Identify "near-miss" SORB setups that still have edge
 2. Predict which setups are most likely to succeed
 3. Generate additional signals when conditions are favorable
-
 Models:
-- Random Forest for pattern classification
-- Gradient Boosting for probability estimation
-- Simple Neural Network for complex patterns
-
-Author: Quant Research AI
+Random Forest for pattern classification
+Gradient Boosting for probability estimation
+Simple Neural Network for complex patterns
 """
 
 import pandas as pd
@@ -23,7 +17,6 @@ from typing import List, Dict, Tuple, Optional
 import warnings
 warnings.filterwarnings('ignore')
 
-# ML Libraries
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import TimeSeriesSplit
@@ -34,8 +27,6 @@ import os
 
 @dataclass
 class MLConfig:
-    """Configuration for ML models"""
-
     # Feature engineering
     lookback_bars: int = 20
     forward_bars: int = 12  # ~1 hour for target
