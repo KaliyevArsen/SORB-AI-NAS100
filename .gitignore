@@ -4,10 +4,6 @@
 *.xls
 
 # Generated outputs
-*.png
-*.jpg
-*.jpeg
-backtest_report.*
 trade_log.*
 
 # Python
