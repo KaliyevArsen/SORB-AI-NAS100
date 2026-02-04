@@ -26,8 +26,8 @@ The Gradient Boosting model analyzes 35 features to filter signals:
 | Total Trades | 136 |
 | Win Rate | 57.4% |
 | Expectancy | 1.008R |
-| Profit Factor | 1.62 |
-| Max Drawdown | ~12% |
+| Profit Factor | 2.52 |
+| Max Drawdown | ~5.35% |
 
 *Results from 50/50 train/test split on 9 years of data (2016-2025)*
 
@@ -127,11 +127,3 @@ The backtest produces:
 - **Estimators**: 100
 - **Max Depth**: 10
 - **Train/Test Split**: Time-series aware (no lookahead bias)
-
-## License
-
-MIT License - Use at your own risk.
-
-## Disclaimer
-
-This software is for educational and research purposes only. Trading involves substantial risk of loss. Past performance is not indicative of future results. The authors are not responsible for any financial losses incurred from using this strategy.
